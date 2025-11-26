@@ -18,11 +18,12 @@ header{
 }
 
 header a{
-    color: black;
+    color: #6F1D1B;
+    font-size: 1.5rem;
 }
 
-body{
-    background-color: #BB9557;
+#body{
+    background-image: url(./img/Fondo\ vector.jpg);
 }
 
 nav{
@@ -32,7 +33,8 @@ nav{
 
 .logonav{
     display: flex;
-    width: 14vh;
+    width: 15vh;
+    padding: 5px 0px 5px 20px;
 }
 
 .listanav{
@@ -48,22 +50,27 @@ ul{
 #cabecera{
     background-image: url("./img/Cabecera_obrador.jpg");
     background-size: cover;
-    background-position: center;
-    height: 65vh;
+    background-position: right;
+    height: 91vh;
 }
 
 h1{
     font-size: 4rem;
     color: whitesmoke;
 }
-
-#cabecera div{
+.logoCabecera{
+    display: flex;
+    width: 20%;
+    margin-left: 15%;
+    padding-top: 5%;
+    margin-bottom: 2%;
+}
+.textoCabecera{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     text-align: center;
-    width: 60%;
+    width: 50%;
 }
 
 #cabecera p{
@@ -78,6 +85,13 @@ h1{
 }
 #categorias h2{
     text-align: center;
+    color: whitesmoke;
+    text-shadow: black 1px 1px 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.500);
 }
 .listaCategorias{
     display: flex;
@@ -86,19 +100,31 @@ h1{
 }
 .listaCategorias p{
     text-align: center;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: #6F1D1B;
+    border-radius: 10px;
+    margin-top: 2%;
 }
 /*Sobre nosotros*/
+#bodyNegro{
+    background-color: black;
+}
 #sobreNosotros{
     text-align: center;
 }
 #sobreNosotros h2{
     color: whitesmoke;
     text-shadow: black 1px 1px 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.500);
 }
 #sobreNosotros video{
     width: 100%;
     display: block;
-    position: fixed;
+    position: absolute;
     z-index: -1;
 }
 #textoNosotros{
@@ -106,11 +132,20 @@ h1{
     margin: auto;
     color: whitesmoke;
     text-shadow: black 1px 1px 2px;
+    font-size: 1.5rem;
+    padding-top: 2%;
 }
 
 /*FAQS*/
-#faqs > div:first-child{
+#faqs h2{
     text-align: center;
+    color: whitesmoke;
+    text-shadow: black 1px 1px 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.500);
 }
 #preguntas{
     display: flex;
@@ -118,22 +153,41 @@ h1{
     width: 50%;
     margin: auto;
 }
+.pregYresp{
+    margin-bottom: 2%;
+}
+
+#faqs h3{
+    background-color: rgba(0, 0, 0, 0.400);
+    color: #FFE6A7;;
+    padding: 1% 1% 1% 1%;
+    border-radius: 10px;
+}
 #faqs p{
-    color: rgb(218, 218, 218);
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1% 1% 1% 1%;
+    border-radius: 10px;
 }
 
 /*Contacto*/
 #formulario{
+    font-size: 1.3rem;
+}
+#formulario h2{
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: black 1px 1px 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+#formulario form{
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 40%;
-}
-#formulario > div{
-    text-align: center;
-}
-#formulario form{
-    width: 100%;
 }
 .formNombre input{
     width: 50%;
@@ -155,8 +209,12 @@ h1{
     
 }
 .formEnviar{
-
+    width: 20%;
+    margin: auto;
+    font-size: 1.3rem;
 }
 #mapa{
     text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
