@@ -18,6 +18,10 @@ header a{
     color: whitesmoke;
     font-size: 1.5rem;
 }
+header li :hover{
+    color: #FFE6A7;
+    text-shadow: black 1px 1px 2px;
+}
 #body{
     background-image: url(./img/Fondo\ vector.jpg);
 }
@@ -89,6 +93,10 @@ h1{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.listaCategorias a :hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
 .listaCategorias p{
     text-align: center;
     font-size: 1.5rem;
@@ -125,7 +133,9 @@ h1{
     color: whitesmoke;
     text-shadow: black 1px 1px 2px;
     font-size: 1.5rem;
+    margin-top: 2%;
     padding-top: 2%;
+    background-color: rgba(245, 245, 245, 0.100);
 }
 
 /*FAQS*/
@@ -149,15 +159,17 @@ h1{
     margin-bottom: 2%;
 }
 #faqs h3{
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: #6F1D1B;
     color: #FFE6A7;;
     padding: 1% 1% 1% 1%;
     border-radius: 10px;
+    font-size: 1.3rem;
 }
 #faqs p{
     background-color: rgba(255, 255, 255, 0.4);
     padding: 1% 1% 1% 1%;
     border-radius: 10px;
+    font-size: 1.2rem;
 }
 
 /*Contacto*/
