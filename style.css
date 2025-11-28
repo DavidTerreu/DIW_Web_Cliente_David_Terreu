@@ -92,6 +92,7 @@ h1{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 2%;
 }
 .listaCategorias img{
     box-shadow: black 2px 2px 10px;
@@ -127,11 +128,18 @@ h1{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedorIZQ > div:nth-child(1){
+    margin-right: 5%;
+}
+.contenedorIZQ > div:nth-child(3){
+    margin-right: 5%;
 }
 .listaCategorias2{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    width: 35%;
 }
 .listaCategorias2 img{
     box-shadow: black 2px 2px 10px;
@@ -148,6 +156,9 @@ h1{
     background-color: #FFE6A7;
     color: #6F1D1B;
     transition: all 0.3s ease-in-out;
+}
+.IMGcategoria{
+    cursor: pointer;
 }
 
 /*Sobre nosotros*/
@@ -166,10 +177,11 @@ h1{
     background-color: rgba(0, 0, 0, 0.500);
 }
 #sobreNosotros video{
-    width: 100%;
+    width: 84%;
     display: block;
     position: absolute;
     z-index: -1;
+    position-area: top;
 }
 #textoNosotros{
     width: 60%;
@@ -321,5 +333,11 @@ label{
 footer{
     background-color: #6F1D1B;
     color: whitesmoke;
-    height: 15vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logoFooter{
+    width: 6%;
 }
