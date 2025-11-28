@@ -8,44 +8,37 @@
     font-family: 'EB Garamond';
     font-weight: bold;
 }
-
 img{
     max-width: 100%;
 }
-
 header{
-    background-color: #FFE6A7;
+    background-color: #6F1D1B;
 }
-
 header a{
-    color: #6F1D1B;
+    color: whitesmoke;
     font-size: 1.5rem;
 }
-
 #body{
     background-image: url(./img/Fondo\ vector.jpg);
 }
-
 nav{
     display: flex;
     align-items: center;
 }
-
 .logonav{
     display: flex;
     width: 15vh;
     padding: 5px 0px 5px 20px;
 }
-
 .listanav{
     width: 92%;
 }
-
 ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
+
 /*Index*/
 #cabecera{
     background-image: url("./img/Cabecera_obrador.jpg");
@@ -53,7 +46,6 @@ ul{
     background-position: right;
     height: 91vh;
 }
-
 h1{
     font-size: 4rem;
     color: whitesmoke;
@@ -72,7 +64,6 @@ h1{
     text-align: center;
     width: 50%;
 }
-
 #cabecera p{
     font-size: 1.5rem;
     color: whitesmoke;
@@ -106,6 +97,7 @@ h1{
     border-radius: 10px;
     margin-top: 2%;
 }
+
 /*Sobre nosotros*/
 #bodyNegro{
     background-color: black;
@@ -156,7 +148,6 @@ h1{
 .pregYresp{
     margin-bottom: 2%;
 }
-
 #faqs h3{
     background-color: rgba(0, 0, 0, 0.400);
     color: #FFE6A7;;
