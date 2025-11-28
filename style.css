@@ -123,18 +123,18 @@ h1{
 .contenedorProductos{
     display: flex;
 }
+.contenedorIZQ{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .listaCategorias2{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 50%;
 }
 .listaCategorias2 img{
     box-shadow: black 2px 2px 10px;
-}
-.aIMGcategorias2 :hover{
-    transform: scale(1.03);
-    transition: all 0.3s ease-in-out;
 }
 .listaCategorias2 p{
     text-align: center;
@@ -143,7 +143,6 @@ h1{
     background-color: #6F1D1B;
     border-radius: 10px;
     margin-top: 2%;
-    width: 100%;
 }
 .aTEXTOcategorias2 :hover{
     background-color: #FFE6A7;
@@ -218,11 +217,22 @@ h1{
 }
 
 /*Contacto*/
+#contactoUP h2{
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: black 1px 1px 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.500);
+}
 label{
     color: #6F1D1B;
 }
 #formulario{
     font-size: 1.3rem;
+    margin-bottom: 2%;
 }
 #formulario h2{
     text-align: center;
@@ -257,7 +267,7 @@ label{
 }
 .formCategoria{
     height: 4vh;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 .formPregunta textarea{
     width: 100%;
@@ -279,16 +289,37 @@ label{
     margin-top: 2%;
     margin-bottom: 2%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 #mapa img{
     box-shadow: black 2px 2px 10px;
 }
-.contactoHorarios{
-    margin-left: 3%;
+.contactoDireccion{
     font-size: 2rem;
     background-color: rgba(245, 245, 245, 0.500);
     border-radius: 20px;
     color: #6F1D1B;
     padding: 1% 1% 1% 1%;
+    margin-bottom: 2%;
+}
+.contactoHorarios{
+    font-size: 2rem;
+    background-color: rgba(245, 245, 245, 0.500);
+    border-radius: 20px;
+    color: #6F1D1B;
+    padding: 1% 1% 1% 1%;
+}
+.contactoTelefono{
+    font-size: 2rem;
+    background-color: rgba(245, 245, 245, 0.500);
+    border-radius: 20px;
+    color: #6F1D1B;
+    padding: 1% 1% 1% 1%;
+    margin-bottom: 2%;
+}
+/*Footer*/
+footer{
+    background-color: #6F1D1B;
+    color: whitesmoke;
+    height: 15vh;
 }
