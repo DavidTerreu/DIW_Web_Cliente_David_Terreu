@@ -141,6 +141,13 @@ h1{
 .contenedorIZQ > div:nth-child(3){
     margin-right: 5%;
 }
+.contenedorDER{
+    margin-top: 5%;
+}
+.contenedorDER img{
+    box-shadow: black 2px 2px 10px;
+    border-radius: 15px;
+}
 .listaCategorias2{
     display: flex;
     justify-content: space-around;
