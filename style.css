@@ -129,9 +129,14 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 2%;
 }
 .contenedorIZQ > div:nth-child(1){
     margin-right: 5%;
+    margin-bottom: 2%;
+}
+.contenedorIZQ > div:nth-child(2){
+    margin-bottom: 2%;
 }
 .contenedorIZQ > div:nth-child(3){
     margin-right: 5%;
@@ -152,7 +157,7 @@ h1{
     border-radius: 10px;
     margin-top: 2%;
 }
-.aTEXTOcategorias2 :hover{
+.TEXTOcategoria :hover{
     background-color: #FFE6A7;
     color: #6F1D1B;
     transition: all 0.3s ease-in-out;
@@ -305,6 +310,9 @@ label{
 }
 #mapa img{
     box-shadow: black 2px 2px 10px;
+}
+#mapa > div:nth-child(2){
+    width: 30%;
 }
 .contactoDireccion{
     font-size: 2rem;
