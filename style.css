@@ -15,7 +15,7 @@ header{
     background-color: #6F1D1B;
 }
 header a{
-    color: whitesmoke;
+    color: #f5f5f5;
     font-size: 1.5rem;
 }
 header li :hover{
@@ -81,7 +81,7 @@ h1{
 #categorias h2{
     text-align: center;
     color: whitesmoke;
-    text-shadow: black 1px 1px 2px;
+    text-shadow: #000000 1px 1px 2px;
     padding-top: 2%;
     padding-bottom: 2%;
     margin-bottom: 2%;
