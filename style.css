@@ -145,6 +145,7 @@ h1{
     margin-top: 5%;
     display: flex;
     flex-direction: column;
+    margin-right: 2%;
 }
 .contenedorDER img{
     box-shadow: black 2px 2px 10px;
@@ -195,29 +196,41 @@ h1{
 #sobreNosotros{
     text-align: center;
 }
-#sobreNosotros h2{
-    color: whitesmoke;
-    text-shadow: black 1px 1px 2px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.500);
-}
 #sobreNosotros video{
-    width: 84%;
-    display: block;
-    position: absolute;
-    z-index: -1;
-    position-area: top;
+    width: 100%;
 }
 #textoNosotros{
     width: 60%;
-    margin: auto;
-    color: whitesmoke;
-    text-shadow: black 1px 1px 2px;
     font-size: 1.5rem;
-    margin-top: 2%;
-    padding-top: 2%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    color: whitesmoke;
+    position-area: top;
+    margin-top: 10%;
+    text-shadow: black 1px 1px 2px;
+}
+.galeriaFotos {
+    grid-row: 3;
+    grid-column: 1;
+}
+.encima{
+    position: absolute;
+    width: 100%;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 9.1vh;
+    background-color: rgba(0,0,0,0.5);
+}
+.encima h2{
+    color: whitesmoke;
+    border-radius: 6px;
+    font-size: 2rem;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-shadow: black 1px 1px 2px;
 }
 
 /*FAQS*/
@@ -369,4 +382,182 @@ footer{
 }
 .logoFooter{
     width: 6%;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1440px){
+    /*Categorias*/
+    .listaCategorias > div:nth-child(3){
+        margin-top: 3%;
+    }
+    #categorias{
+        height: 90vh;
+    }
+    /*Panes*/
+    .contenedorDER{
+        margin-top: 3%;
+        width: 45%;
+    }
+    .volver{
+        margin-left: 26%;
+        margin-right: 26%;
+    }
+    /*Sobre Nosotros*/
+        .encima{
+        top: 9vh;
+    }
+}
+@media screen and (max-width: 1200px){
+    /*INDEX*/
+    #cabecera{
+        height: 81.5vh;
+        background-image: url(./img/Cabecera_obrador_2.jpg);
+    }
+    /*Sobre Nosotros*/
+        #textoNosotros{
+        margin-top: 15%;
+    }
+    /*Contacto*/
+    #mapa > div:nth-child(2){
+        width: 40%;
+    }
+    #formulario form{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 992px){
+    /*INDEX*/
+    /*Categorias*/
+    .listaCategorias > div:nth-child(2){
+        margin-top: 3%;
+    }
+    #categorias{
+        height: 165vh;
+    }
+    /*Panes*/
+    .contenedorProductos{
+        flex-direction: column;
+    }
+    .listaCategorias2{
+        width: 31%;
+    }
+    .contenedorIZQ{
+    width: 95%;
+    }
+    .contenedorDER{
+        width: 60%;
+    }
+    .contenedorDER{
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    /*Sobre Nosotros*/
+    .encima{
+        top: 8.5vh;
+    }
+    /*FAQS*/
+    #preguntas{
+        width: 65%;
+    }
+    /*Footer*/
+    footer{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 768px){
+    /*INDEX*/
+    #cabecera{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logoCabecera{
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .textoCabecera{
+        background-color: rgba(0, 0, 0, 0.700);
+        border-radius: 10px;
+        padding: 1% 1% 1% 1%;
+        width: 60%;
+    }
+    /*Categorias*/
+    #categorias{
+        height: 215vh;
+    }
+    /*Contacto*/
+    #mapa{
+        flex-direction: column-reverse;
+    }
+    #mapa > div:nth-child(2){
+        width: 65%;
+        margin-bottom: 2%;
+    }
+    /*Footer*/
+    footer{
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width: 576px){
+    /*Header*/
+    header a{
+        font-size: 1.3rem;
+    }
+    /*Sobre Nosotros*/
+    #textoNosotros{
+        margin-top: 30%;
+    }
+    .encima{
+        top: 8vh;
+    }
+    /*INDEX*/
+    .logoCabecera{
+        width: 40%;
+    }
+    /*Footer*/
+    footer{
+        padding-left: 2%;
+        height: 11vh;
+    }
+    .logoFooter{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 450px){
+    /*INDEX*/
+    .logoCabecera{
+        width: 55%;
+    }
+    .textoCabecera{
+        width: 88%;
+    }
+    header a{
+        font-size: 1rem;
+    }
+    /*Categorias*/
+    .listaCategorias{
+        width: 85%;
+        margin-left: 8%;
+    }
+    #categorias{
+        height: 170vh;
+    }
+    .listaCategorias2{
+        width: 40%;
+    }
+    .contenedorDER{
+        width: 85%;
+    }
+    /*Sobre Nosotros*/
+    .encima{
+        top: 7.5vh;
+    }
+    /*Contacto*/
+    #mapa img{
+        width: 80%;
+    }
+    #formulario form{
+        width: 85%;
+    }
 }
