@@ -119,6 +119,21 @@ h1{
     color: #6F1D1B;
     transition: all 0.3s ease-in-out;
 }
+.aviso{
+    background-color: #FFE6A7;
+    color: #6F1D1B;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aviso img{
+    width: 6vh;
+    margin: 0.5% 1% 0.5% 0;
+}
 
 /*Panes*/
 .contenedorProductos{
